@@ -3,43 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein erster Artikel</title>
+  <title>Mein Artikel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Mein Blog</h1>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="#">Kategorien</a>
-      <a href="#">Über mich</a>
-      <a href="#">Kontakt</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">MeinBlog</h1>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="#">Kategorien</a>
+        <a href="#">Über mich</a>
+        <a href="#">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <article>
-      <h2>Mein erster Blogartikel</h2>
-      <p><em>Veröffentlicht am 23. September 2025</em></p>
+  <main class="container main-layout">
+    <section class="content">
+      <article class="card">
+        <h2>Mein erster Blogartikel</h2>
+        <p><em>Veröffentlicht am 23. September 2025</em></p>
 
-      <p>Willkommen zu meinem ersten Blogbeitrag! Hier erzähle ich dir etwas Spannendes …</p>
+        <p>Willkommen zu meinem professionellen Blogbeitrag! Hier findest du spannende Inhalte …</p>
 
-      <div class="ad">
-        <!-- Werbung mitten im Text -->
-        <p>[Hier könnte ein Banner sein]</p>
-      </div>
+        <div class="ad">[Banner-Werbung]</div>
 
-      <p>… und hier geht der Artikel weiter.</p>
-    </article>
+        <p>Und hier geht der Artikel weiter mit noch mehr Informationen …</p>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Weitere Artikel</h3>
+      <ul>
+        <li><a href="#">Artikel 2</a></li>
+        <li><a href="#">Artikel 3</a></li>
+      </ul>
+
+      <h3>Werbung</h3>
+      <div class="ad">[Sidebar-Werbung]</div>
+    </aside>
   </main>
 
-  <aside class="ad">
-    <!-- Werbung (Seitenleiste) -->
-    <p>[Sidebar-Werbung]</p>
-  </aside>
-
   <footer>
-    <p>&copy; 2025 Mein Blog | Alle Rechte vorbehalten</p>
+    <div class="container">
+      <p>&copy; 2025 MeinBlog</p>
+    </div>
   </footer>
 </body>
 </html>
+
