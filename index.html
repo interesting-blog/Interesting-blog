@@ -1,44 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein Blog</title>
+  <title>Mein Professioneller Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Mein Blog</h1>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="#">Kategorien</a>
-      <a href="#">Über mich</a>
-      <a href="#">Kontakt</a>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">MeinBlog</h1>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="#">Kategorien</a>
+        <a href="#">Über mich</a>
+        <a href="#">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Neueste Artikel</h2>
-    <div class="blog-list">
-      <article>
-        <h3><a href="article.html">Mein erster Blogartikel</a></h3>
-        <p>Ein kurzer Teasertext für den Artikel …</p>
-      </article>
-
-      <article>
-        <h3><a href="#">Zweiter Artikel (Demo)</a></h3>
-        <p>Noch ein kleiner Vorschautext …</p>
-      </article>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Willkommen auf meinem Blog</h2>
+      <p>Hier findest du spannende Artikel, Tipps & Geschichten.</p>
     </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container main-layout">
+    <section class="content">
+      <h2>Neueste Artikel</h2>
+      <div class="blog-grid">
+        <article class="card">
+          <img src="https://source.unsplash.com/400x200/?nature" alt="Artikelbild">
+          <h3><a href="article.html">Mein erster Blogartikel</a></h3>
+          <p>Ein spannender Artikel mit vielen interessanten Infos …</p>
+          <a class="btn" href="article.html">Weiterlesen</a>
+        </article>
+
+        <article class="card">
+          <img src="https://source.unsplash.com/400x200/?technology" alt="Artikelbild">
+          <h3><a href="#">Zweiter Artikel</a></h3>
+          <p>Ein kurzer Einblick in ein neues Thema …</p>
+          <a class="btn" href="#">Weiterlesen</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sidebar Werbung -->
+    <aside class="sidebar">
+      <h3>Werbung</h3>
+      <div class="ad">[Google Ads Platzhalter]</div>
+      <div class="ad">[Affiliate Banner Platzhalter]</div>
+    </aside>
   </main>
 
-  <aside class="ad">
-    <!-- Werbung (Platzhalter) -->
-    <p>[Hier könnte deine Werbung stehen]</p>
-  </aside>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mein Blog | Alle Rechte vorbehalten</p>
+    <div class="container">
+      <p>&copy; 2025 MeinBlog | Alle Rechte vorbehalten</p>
+      <p><a href="#">Datenschutz</a> | <a href="#">Impressum</a></p>
+    </div>
   </footer>
 </body>
 </html>
